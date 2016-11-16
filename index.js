@@ -100,6 +100,7 @@ module.exports = {
       2,
       {
         except: ['value'],
+        ignore: ['inside-parens'],
       },
     ],
     'no-extra-semicolons': true,
