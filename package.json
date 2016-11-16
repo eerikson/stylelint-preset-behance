@@ -1,6 +1,6 @@
 {
   "name": "stylelint-preset-behance",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Stylelint preset for Behance",
   "author": "Wei Kin Huang <weikin.huang04@gmail.com>",
   "license": "MIT",
