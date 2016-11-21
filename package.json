@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/behance/stylelint-preset-behance#readme",
   "dependencies": {
-    "stylelint": "^7.5.0"
+    "stylelint": "^7.6.0"
   },
   "devDependencies": {
     "eslint": "^3.10.2",
