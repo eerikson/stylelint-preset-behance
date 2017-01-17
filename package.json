@@ -17,9 +17,6 @@
     "url": "https://github.com/behance/stylelint-preset-behance/issues"
   },
   "homepage": "https://github.com/behance/stylelint-preset-behance#readme",
-  "dependencies": {
-    "stylelint": "^7.6.0"
-  },
   "devDependencies": {
     "eslint": "^3.10.2",
     "eslint-plugin-behance": "^1.0.0",
