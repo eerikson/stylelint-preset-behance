@@ -1,10 +1,21 @@
 module.exports = {
+  plugins: [
+    'stylelint-order',
+  ],
   rules: {
     // Color
     'color-hex-case': 'lower',
     'color-hex-length': 'short',
     'color-named': 'never',
     'color-no-invalid-hex': true,
+
+    // Order
+    'order/order': [
+      'dollar-variables',
+      'declarations',
+      'rules',
+    ],
+    'order/properties-alphabetical-order': true,
 
     // Font family
 
@@ -58,6 +69,7 @@ module.exports = {
     // Declaration
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
+    'declaration-block-trailing-semicolon': 'always',
     'declaration-colon-space-after': 'always',
     'declaration-colon-space-before': 'never',
     'declaration-property-value-blacklist': {
@@ -65,17 +77,14 @@ module.exports = {
     },
 
     // Declaration block
-    'declaration-block-properties-order': [
-      'alphabetical',
-    ],
 
     // Block
     'block-no-empty': true,
     'block-opening-brace-space-before': 'always',
 
     // Selector
-    'selector-no-empty': true,
     'selector-pseudo-class-parentheses-space-inside': 'never',
+    'selector-pseudo-element-colon-notation': 'double',
 
     // Selector list
     'selector-list-comma-newline-after': 'always-multi-line',
@@ -105,5 +114,25 @@ module.exports = {
     ],
     'no-extra-semicolons': true,
     'no-missing-end-of-source-newline': true,
+    'rule-empty-line-before': [
+      'always', {
+        except: ['first-nested'],
+        ignore: ['after-comment'],
+      },
+    ],
+    'block-closing-brace-empty-line-before': 'never',
+    'declaration-empty-line-before': [
+      'never', {
+        ignore: ['after-declaration'],
+      },
+    ],
+    'block-closing-brace-newline-before': 'always',
+    'block-closing-brace-newline-after': 'always',
+    'max-empty-lines': 1,
+    'property-no-vendor-prefix': true,
+    'value-no-vendor-prefix': true,
+    'selector-no-vendor-prefix': true,
+    'at-rule-no-vendor-prefix': true,
+    'media-feature-name-no-vendor-prefix': true,
   },
 };
