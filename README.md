@@ -6,6 +6,7 @@
 
 ```js
 $ npm install --save-dev stylelint-preset-behance
+$ npm install --save-dev stylelint-order
 ```
 
 ## Usage
