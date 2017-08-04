@@ -87,7 +87,7 @@ module.exports = {
     'selector-pseudo-element-colon-notation': 'double',
 
     // Selector list
-    'selector-list-comma-newline-after': 'always-multi-line',
+    'selector-list-comma-newline-after': 'always',
 
     // Root rule
 
